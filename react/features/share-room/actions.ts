@@ -17,7 +17,6 @@ import {
 export function beginShareRoom(roomURL?: string) {
     return (dispatch: IStore['dispatch'], getState: IStore['getState']) => {
         if (!roomURL) {
-            // eslint-disable-next-line no-param-reassign
             roomURL = getInviteURL(getState);
         }
 

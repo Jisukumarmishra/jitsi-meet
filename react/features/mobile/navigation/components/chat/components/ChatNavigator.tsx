@@ -1,5 +1,3 @@
-/* eslint-disable lines-around-comment */
-
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';

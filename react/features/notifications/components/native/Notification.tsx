@@ -144,7 +144,6 @@ const Notification = ({
         return descriptionArray;
     };
 
-    // eslint-disable-next-line react/no-multi-comp
     const _renderContent = () => {
         const titleText = title || (titleKey && t(titleKey, titleArguments));
         const descriptionArray = _getDescription();

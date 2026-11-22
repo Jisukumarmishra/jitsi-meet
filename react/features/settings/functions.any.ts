@@ -39,7 +39,6 @@ export function isServerURLChangeEnabled(stateful: IStateful) {
  * @returns {string|null} - The normalized URL, or null if the URL is invalid.
  */
 export function normalizeUserInputURL(url: string) {
-    /* eslint-disable no-param-reassign */
 
     if (url) {
         url = url.replace(/\s/g, '').toLowerCase();
@@ -62,7 +61,6 @@ export function normalizeUserInputURL(url: string) {
 
     return url;
 
-    /* eslint-enable no-param-reassign */
 }
 
 /**

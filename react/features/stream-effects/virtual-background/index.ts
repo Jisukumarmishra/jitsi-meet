@@ -1,4 +1,3 @@
-/* eslint-disable lines-around-comment */
 import { IStore } from '../../app/types';
 import { showWarningNotification } from '../../notifications/actions';
 import { NOTIFICATION_TIMEOUT_TYPE } from '../../notifications/constants';
@@ -13,7 +12,6 @@ import createTFLiteSIMDModule from './vendor/tflite/tflite-simd';
 const models = {
     modelLandscape: 'libs/selfie_segmentation_landscape.tflite'
 };
-/* eslint-enable lines-around-comment */
 
 let modelBuffer: ArrayBuffer;
 let tflite: any;

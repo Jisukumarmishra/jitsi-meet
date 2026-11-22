@@ -112,7 +112,6 @@ export function abstractMapStateToProps(state: IReduxState, ownProps: IProps) {
     const { exclude = [], t } = ownProps;
 
     const whom = exclude
-        // eslint-disable-next-line no-confusing-arrow
         .map(id => id === getLocalParticipant(state)?.id
             ? t('dialog.muteEveryoneSelf')
             : getParticipantDisplayName(state, id))

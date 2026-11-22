@@ -33,7 +33,6 @@ const ContextMenuLobbyParticipantReject = ({ participant: p }: IProps) => {
     [ dispatch ]);
     const { t } = useTranslation();
 
-    // eslint-disable-next-line react/no-multi-comp
     const renderMenuHeader = () => (
         <View
             style = { styles.contextMenuItemSectionAvatar as ViewStyle }>

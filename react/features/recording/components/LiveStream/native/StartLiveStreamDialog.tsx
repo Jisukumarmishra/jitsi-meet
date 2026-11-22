@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { translate } from '../../../../base/i18n/functions';
 import JitsiScreen from '../../../../base/modal/components/JitsiScreen';
 import { StyleType } from '../../../../base/styles/functions.any';
-// eslint-disable-next-line lines-around-comment
 // @ts-ignore
 import googleApi from '../../../../google-api/googleApi.native';
 import HeaderNavigationButton

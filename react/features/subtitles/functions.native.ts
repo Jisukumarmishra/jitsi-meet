@@ -1,5 +1,3 @@
-/* eslint-disable max-params, max-len */
-
 import { sendEvent } from '../mobile/external-api/functions';
 
 

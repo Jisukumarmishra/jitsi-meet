@@ -370,7 +370,6 @@ export default class WebHidManager extends EventTarget {
                 const item = inputReport.hookSwitch;
                 const byteIndex = Math.trunc(item.usageOffset / 8);
                 const bitPosition = item.usageOffset % 8;
-                // eslint-disable-next-line no-bitwise
                 const usageOn = (data.getUint8(byteIndex) & (0x01 << bitPosition)) !== 0;
 
                 logger.warn('recv hookSwitch ', usageOn ? HOOK_STATUS.OFF : HOOK_STATUS.ON);
@@ -393,7 +392,6 @@ export default class WebHidManager extends EventTarget {
                 const item = inputReport.phoneMute;
                 const byteIndex = Math.trunc(item.usageOffset / 8);
                 const bitPosition = item.usageOffset % 8;
-                // eslint-disable-next-line no-bitwise
                 const usageOn = (data.getUint8(byteIndex) & (0x01 << bitPosition)) !== 0;
 
                 logger.warn('recv phoneMute ', usageOn ? HOOK_STATUS.ON : HOOK_STATUS.OFF);
@@ -656,7 +654,6 @@ export default class WebHidManager extends EventTarget {
                         const byteIndex = Math.trunc(offset / 8);
                         const bitPosition = offset % 8;
 
-                        // eslint-disable-next-line no-bitwise
                         reportData[byteIndex] = 1 << bitPosition;
                     }
 
@@ -961,7 +958,6 @@ export default class WebHidManager extends EventTarget {
             offHookReport = this.outputEventGenerators[DEVICE_USAGE.offHook.usageId](curOffHook);
             reportData = new Uint8Array(offHookReport);
             for (const [ i, data ] of muteReport.entries()) {
-                // eslint-disable-next-line no-bitwise
                 reportData[i] |= data;
             }
         } else if (reportId === this.deviceCommand.outputReport.offHook.reportId) {

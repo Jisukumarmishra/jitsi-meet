@@ -113,7 +113,6 @@ export function abstractMapStateToProps(state: IReduxState, ownProps: IProps) {
     const isModerationEnabled = isEnabledFromState(AVM_MEDIA_TYPE.DESKTOP, state);
 
     const whom = exclude
-        // eslint-disable-next-line no-confusing-arrow
         .map(id => id === getLocalParticipant(state)?.id
             ? t('dialog.muteEveryoneSelf')
             : getParticipantDisplayName(state, id))

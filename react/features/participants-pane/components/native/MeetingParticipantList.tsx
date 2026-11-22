@@ -96,7 +96,7 @@ const MeetingParticipantList = ({
                     accessibilityLabel = 'participantsPane.actions.invite'
                     disabled = { isShareDialogVisible }
 
-                    // eslint-disable-next-line react/jsx-no-bind, no-confusing-arrow
+                    // eslint-disable-next-line react/jsx-no-bind
                     icon = { () => (
                         <Icon
                             color = { iconColor }

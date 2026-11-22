@@ -31,7 +31,6 @@ const AudioModeEmitter = new NativeEventEmitter(AudioMode);
  * @returns {Function}
  */
 MiddlewareRegistry.register(store => next => action => {
-    /* eslint-disable no-fallthrough */
 
     switch (action.type) {
     case _SET_AUDIOMODE_SUBSCRIPTIONS:
@@ -80,8 +79,6 @@ MiddlewareRegistry.register(store => next => action => {
         break;
     }
     }
-
-    /* eslint-enable no-fallthrough */
 
     return next(action);
 });

@@ -91,7 +91,6 @@ class ShareAudioDialog extends Component<IProps> {
                         checked = { this.props._shouldHideShareAudioHelper }
                         label = { t('dialog.hideShareAudioHelper') }
                         name = 'hide-share-audio-helper'
-                        // eslint-disable-next-line react/jsx-no-bind
                         onChange = { this._onSelectHideShareAudioHelper } />
                 </div>
             </Dialog>

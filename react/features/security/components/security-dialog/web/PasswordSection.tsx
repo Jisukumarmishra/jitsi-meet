@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-bind */
 import React, { useCallback, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';

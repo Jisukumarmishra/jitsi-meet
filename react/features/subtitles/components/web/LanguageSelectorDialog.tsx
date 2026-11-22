@@ -74,5 +74,4 @@ const LanguageSelectorDialog = (props: IAbstractLanguageSelectorDialogProps) => 
  * We apply AbstractLanguageSelector to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default translate(AbstractLanguageSelectorDialog(LanguageSelectorDialog));

@@ -1,4 +1,3 @@
-// eslint-disable-next-line lines-around-comment
 import React from 'react';
 
 import Avatar from '../../../base/avatar/components/Avatar';

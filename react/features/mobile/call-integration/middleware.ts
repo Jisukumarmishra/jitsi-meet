@@ -388,7 +388,7 @@ function _onPerformSetMutedCallAction({ callUUID, muted }: { callUUID: string; m
     const conference = getCurrentConference(getState);
 
     if (conference?.callUUID === callUUID) {
-        muted = Boolean(muted); // eslint-disable-line no-param-reassign
+        muted = Boolean(muted);
 
         sendAnalytics(
             createTrackMutedEvent('audio', 'call-integration', muted));

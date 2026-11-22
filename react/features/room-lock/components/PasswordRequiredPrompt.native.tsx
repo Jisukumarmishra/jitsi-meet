@@ -78,7 +78,6 @@ class PasswordRequiredPrompt extends Component<IProps, IState> {
         // logic. We move the prop into state and only update it if it has an actual value, avoiding losing the
         // previously received value when Redux updates.
         if (_password && _password !== this.state.password) {
-            // eslint-disable-next-line react/no-did-update-set-state
             this.setState({
                 password: _password
             });

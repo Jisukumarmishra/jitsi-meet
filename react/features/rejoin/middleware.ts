@@ -9,7 +9,6 @@ StateListenerRegistry.register(
         // Return the most recent conference entry
         return recentList?.length && recentList[recentList.length - 1];
     },
-    // eslint-disable-next-line no-empty-pattern
     /* listener */ (newMostRecent, { }, prevMostRecent) => {
         if (prevMostRecent && newMostRecent) {
 

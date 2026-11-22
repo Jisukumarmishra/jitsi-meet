@@ -102,7 +102,6 @@ StateListenerRegistry.register(
 
         const state = store.getState();
 
-        // eslint-disable-next-line no-negated-condition
         if (typeof APP !== 'undefined') {
             APP.API.notifyError({
                 ...error,

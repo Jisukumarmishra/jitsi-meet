@@ -213,7 +213,6 @@ const Notification = ({
         onDismissed(uid);
     }, [ uid ]);
 
-    // eslint-disable-next-line react/no-multi-comp
     const renderDescription = useCallback(() => {
         const descriptionArray = [];
 

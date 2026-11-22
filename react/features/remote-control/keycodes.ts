@@ -77,7 +77,6 @@ export const KEYS = {
  * The mappings are based on
  * https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Specifications.
  */
-/* eslint-enable max-len */
 const keyCodeToKey = {
     8: KEYS.BACKSPACE,
     9: KEYS.TAB,

@@ -12,7 +12,6 @@ import {
     GOOGLE_API_STATES,
     GOOGLE_SCOPE_YOUTUBE
 } from '../../../../google-api/constants';
-// eslint-disable-next-line lines-around-comment
 // @ts-ignore
 import googleApi from '../../../../google-api/googleApi.native';
 import logger from '../../../logger';

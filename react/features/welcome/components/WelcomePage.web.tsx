@@ -346,7 +346,6 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
      * @protected
      */
     // @ts-ignore
-    // eslint-disable-next-line require-jsdoc
     _onRoomChange(event: React.ChangeEvent<HTMLInputElement>) {
         const specialCharacters = [ '?', '&', ':', '\'', '"', '%', '#', '.' ];
 

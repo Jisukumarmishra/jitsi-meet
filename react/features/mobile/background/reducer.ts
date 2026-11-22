@@ -16,7 +16,6 @@ const DEFAULT_STATE = {
     appState: ''
 };
 
-// eslint-disable-next-line max-len
 ReducerRegistry.register<IMobileBackgroundState>('features/mobile/background', (state = DEFAULT_STATE, action): IMobileBackgroundState => {
     switch (action.type) {
 

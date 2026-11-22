@@ -1,4 +1,3 @@
-/* eslint-disable lines-around-comment */
 import { IStore } from '../app/types';
 import { openSheet } from '../base/dialog/actions';
 import { navigate }

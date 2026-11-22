@@ -46,7 +46,6 @@ MiddlewareRegistry.register(store => next => action => {
  * @returns {void}
  */
 function _alertPermissionErrorWithSettings(trackType: string) {
-    /* eslint-disable indent */
     const message = trackType === 'video'
         ? i18next.t('dialog.permissionCameraRequiredError')
         : i18next.t('dialog.permissionMicRequiredError');

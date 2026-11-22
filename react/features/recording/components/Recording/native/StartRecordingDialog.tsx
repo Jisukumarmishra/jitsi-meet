@@ -72,7 +72,6 @@ class StartRecordingDialog extends AbstractStartRecordingDialog {
         const { navigation, t } = this.props;
 
         navigation.setOptions({
-            // eslint-disable-next-line react/no-multi-comp
             headerRight: () => (
                 <HeaderNavigationButton
                     disabled = { this.isStartRecordingDisabled() }

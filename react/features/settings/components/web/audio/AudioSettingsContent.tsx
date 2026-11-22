@@ -1,4 +1,3 @@
-/* eslint-disable react/no-multi-comp */
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { connect } from 'react-redux';

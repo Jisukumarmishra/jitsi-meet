@@ -1,5 +1,3 @@
-/* eslint-disable lines-around-comment */
-
 import React, { useCallback } from 'react';
 import { View, ViewStyle } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
@@ -54,7 +52,7 @@ const ParticipantsPaneFooter = (): JSX.Element => {
                 && isBreakoutRoomsEnabled
                 && <Button
                     accessibilityLabel = 'participantsPane.actions.breakoutRooms'
-                    // eslint-disable-next-line react/jsx-no-bind, no-confusing-arrow
+                    // eslint-disable-next-line react/jsx-no-bind
                     icon = { () => (
                         <Icon
                             color = { BaseTheme.palette.icon04 }
@@ -62,7 +60,7 @@ const ParticipantsPaneFooter = (): JSX.Element => {
                             src = { IconRingGroup } />
                     ) }
                     labelKey = 'participantsPane.actions.breakoutRooms'
-                    // eslint-disable-next-line react/jsx-no-bind, no-confusing-arrow
+                    // eslint-disable-next-line react/jsx-no-bind
                     onClick = { () => navigate(screen.conference.breakoutRooms) }
                     style = { styles.breakoutRoomsButton }
                     type = { BUTTON_TYPES.SECONDARY } />

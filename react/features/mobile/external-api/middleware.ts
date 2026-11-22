@@ -1,5 +1,3 @@
-/* eslint-disable lines-around-comment */
-
 import { debounce } from 'lodash-es';
 import { NativeEventEmitter, NativeModules } from 'react-native';
 import { AnyAction } from 'redux';

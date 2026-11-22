@@ -1,5 +1,3 @@
-/* eslint-disable no-bitwise */
-
 interface IRnnoiseModule extends EmscriptenModule {
     _rnnoise_create: () => number;
     _rnnoise_destroy: (context: number) => void;

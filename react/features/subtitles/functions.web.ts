@@ -1,5 +1,3 @@
-/* eslint-disable max-params, max-len */
-
 import { MIN_SUBTITLES_FONT_SIZE } from './constants';
 
 /**

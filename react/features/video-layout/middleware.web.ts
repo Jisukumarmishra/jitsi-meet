@@ -18,7 +18,6 @@ import './middleware.any';
  * @param {Store} store - The redux store.
  * @returns {Function}
  */
-// eslint-disable-next-line no-unused-vars
 MiddlewareRegistry.register(store => next => action => {
     // Purposefully perform additional actions after state update to mimic
     // being connected to the store for updates.

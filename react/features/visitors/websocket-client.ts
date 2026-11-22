@@ -55,7 +55,7 @@ export class WebsocketClient {
      *
      * @returns {void}
      */
-    connect(queueServiceURL: string, // eslint-disable-line max-params
+    connect(queueServiceURL: string,
             endpoint: string,
             callback: (response: StateResponse | VisitorResponse) => void,
             token: string | undefined,

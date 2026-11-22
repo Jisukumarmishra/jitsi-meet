@@ -151,7 +151,6 @@ const RemoteVideoMenuTriggerButton = ({
         });
     }, []);
 
-    // eslint-disable-next-line react/no-multi-comp
     const _renderRemoteVideoMenu = () => {
         const props = {
             className: classes.contextMenu,

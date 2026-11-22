@@ -36,7 +36,6 @@ const VerifyParticipantButton = ({
             className = 'verifylink'
             icon = { IconCheck }
             id = { `verifylink_${participantID}` }
-            // eslint-disable-next-line react/jsx-handler-names
             onClick = { _handleClick }
             text = { t('videothumbnail.verify') } />
     );

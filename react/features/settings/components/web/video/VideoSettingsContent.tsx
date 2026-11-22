@@ -226,7 +226,6 @@ const VideoSettingsContent = ({
      * @param {number} index - The index of the entry.
      * @returns {React$Node}
      */
-    // eslint-disable-next-line react/no-multi-comp
     const _renderPreviewEntry = (data: { deviceId: string; error?: string; jitsiTrack: any | null; },
             index: number) => {
         const { error, jitsiTrack, deviceId } = data;
