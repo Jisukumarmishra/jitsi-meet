@@ -110,7 +110,6 @@ const filterSubtree: ISettingsState = {};
 Object.keys(DEFAULT_STATE).forEach(key => {
     const key1 = key as keyof typeof filterSubtree;
 
-    // @ts-ignore
     filterSubtree[key1] = true;
 });
 

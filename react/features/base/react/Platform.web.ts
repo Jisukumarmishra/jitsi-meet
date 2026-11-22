@@ -1,4 +1,3 @@
-// @ts-ignore
 const { maxTouchPoints, platform, userAgent } = navigator;
 
 let OS = '',
