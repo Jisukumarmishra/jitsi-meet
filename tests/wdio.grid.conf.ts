@@ -33,7 +33,6 @@ export const config = mergedConfig;
  * @param arr
  */
 function updateRemoteResource(arr: string[]): string[] {
-    // eslint-disable-next-line no-confusing-arrow
     return arr.map((item: string) => item.startsWith('--use-file-for-fake-audio-capture=')
         ? `--use-file-for-fake-audio-capture=${process.env.REMOTE_RESOURCE_PATH}/fakeAudioStream.wav` : item
     );

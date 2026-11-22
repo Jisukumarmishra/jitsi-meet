@@ -294,7 +294,7 @@ describe('Breakout rooms', () => {
                             return false;
                         }
 
-                        return list.every(r => { // eslint-disable-line arrow-body-style
+                        return list.every(r => {
                             return r.name === MAIN_ROOM_NAME ? r.participantCount === 2 : r.participantCount === 0;
                         });
                     }

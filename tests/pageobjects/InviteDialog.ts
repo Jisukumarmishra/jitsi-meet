@@ -73,7 +73,6 @@ export default class InviteDialog extends BaseDialog {
      */
     async waitTillOpen(reverse = false) {
         await this.participant.driver.waitUntil(
-            /* eslint-disable no-extra-parens */
             async () => (reverse ? !await this.isOpen() : await this.isOpen()),
             {
                 timeout: 2_000,

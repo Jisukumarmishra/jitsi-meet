@@ -167,7 +167,7 @@ export default {
      *  audiooutput: (string|undefined)
      *  }}
      */
-    getNewMediaDevicesAfterDeviceListChanged( // eslint-disable-line max-params
+    getNewMediaDevicesAfterDeviceListChanged(
             newDevices,
             localVideo,
             localAudio,

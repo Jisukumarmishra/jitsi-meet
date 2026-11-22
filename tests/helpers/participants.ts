@@ -203,7 +203,7 @@ export async function ensureTwoParticipants(
  * @param options - Join options.
  * @returns {Promise<Participant>} - The participant instance.
  */
-async function joinParticipant( // eslint-disable-line max-params
+async function joinParticipant(
         participantOptions: IParticipantOptions,
         options?: IJoinOptions
 ): Promise<Participant> {

@@ -158,7 +158,7 @@ export class Participant {
 
             await this.switchToIFrame();
 
-            this._endpointId = await this.execute(() => { // eslint-disable-line arrow-body-style
+            this._endpointId = await this.execute(() => {
                 return APP?.conference?.getMyUserId();
             });
 

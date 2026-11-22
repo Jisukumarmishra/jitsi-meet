@@ -160,7 +160,7 @@ function computeCameraVideoSize( // eslint-disable-line max-params
  * @return an array with 2 elements, the horizontal indent and the vertical
  * indent
  */
-function getCameraVideoPosition( // eslint-disable-line max-params
+function getCameraVideoPosition(
         videoWidth,
         videoHeight,
         videoSpaceWidth,
