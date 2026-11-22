@@ -1,5 +1,3 @@
-/* eslint-disable lines-around-comment */
-
 export interface IDevicesState {
     availableDevices: {
         // @ts-ignore

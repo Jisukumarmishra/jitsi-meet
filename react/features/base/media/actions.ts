@@ -149,7 +149,6 @@ export function setScreenshareMuted(
 
         const oldValue = state['features/base/media'].screenshare.muted;
 
-        // eslint-disable-next-line no-bitwise
         const newValue = muted ? oldValue | authority : oldValue & ~authority;
 
         dispatch({
@@ -207,7 +206,6 @@ export function setVideoMuted(
 
         const oldValue = state['features/base/media'].video.muted;
 
-        // eslint-disable-next-line no-bitwise
         const newValue = muted ? oldValue | authority : oldValue & ~authority;
 
         dispatch({

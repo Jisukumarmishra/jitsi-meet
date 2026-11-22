@@ -566,7 +566,7 @@ function _participant(state: IParticipant | ILocalParticipant = { id: '' },
     switch (action.type) {
     case SET_LOADABLE_AVATAR_URL:
     case PARTICIPANT_UPDATED: {
-        const { participant } = action; // eslint-disable-line no-shadow
+        const { participant } = action;
 
         const newState = { ...state };
 

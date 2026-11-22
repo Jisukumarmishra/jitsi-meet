@@ -19,7 +19,7 @@ import { IStateful } from '../app/types';
 export function assign<T extends Object>(target: T, source: Partial<T>): T {
     let t = target;
 
-    for (const property in source) { // eslint-disable-line guard-for-in
+    for (const property in source) {
         t = _set(t, property, source[property], t === target);
     }
 
@@ -107,8 +107,6 @@ function _set<T extends Object>(
 
     return state;
 }
-
-/* eslint-enable max-params */
 
 /**
  * Whether or not the entity is of type IStore.

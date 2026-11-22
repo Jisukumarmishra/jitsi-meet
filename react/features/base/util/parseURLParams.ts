@@ -30,7 +30,6 @@ export function parseURLParams(
     }
 
     if (typeof url === 'string') {
-        // eslint-disable-next-line no-param-reassign
         url = new URL(url);
     }
     const paramStr = source === 'search' ? url.search : url.hash;

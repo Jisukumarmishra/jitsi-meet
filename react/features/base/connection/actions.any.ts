@@ -283,7 +283,7 @@ export function _connectInternal(id?: string, password?: string) {
              * @private
              * @returns {void}
              */
-            function _onConnectionFailed( // eslint-disable-line max-params
+            function _onConnectionFailed(
                     err: string,
                     message: string,
                     credentials: any,

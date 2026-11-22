@@ -157,7 +157,6 @@ class Avatar<P extends IProps> extends PureComponent<P, IState> {
             // Eslint doesn't like this statement, but based on the React doc, it's safe if it's
             // wrapped in a condition: https://reactjs.org/docs/react-component.html#componentdidupdate
 
-            // eslint-disable-next-line react/no-did-update-set-state
             this.setState({
                 avatarFailed: false,
                 isUsingCORS: Boolean(this.props.useCORS) || Boolean(url && isCORSAvatarURL(url, _corsAvatarURLs))

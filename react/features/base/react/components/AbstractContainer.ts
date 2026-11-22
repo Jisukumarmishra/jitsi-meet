@@ -97,15 +97,11 @@ export default class AbstractContainer<P extends IProps> extends Component<P> {
             children,
             style,
 
-            /* eslint-disable @typescript-eslint/no-unused-vars */
-
             // The following properties are defined for the benefit of
             // AbstractContainer and its extenders so they are to not be
             // propagated.
             touchFeedback,
             visible,
-
-            /* eslint-enable @typescript-eslint/no-unused-vars */
 
             ...filteredProps
         } = props || this.props;

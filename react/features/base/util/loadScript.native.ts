@@ -54,7 +54,7 @@ export async function loadScript(
             return txt;
         }
 
-        return eval.call(window, txt); // eslint-disable-line no-eval
+        return eval.call(window, txt);
     }
     default:
         throw new Error(`loadScript error: ${response.statusText}`);

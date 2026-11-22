@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 import { IReduxState, IStore } from '../../app/types';
 import JitsiMeetJS from '../lib-jitsi-meet';
 import { updateSettings } from '../settings/actions';

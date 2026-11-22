@@ -17,7 +17,6 @@ export function renderHTML(html?: string) {
         // problem on Web, because the specified HTML is rendered as, well,
         // HTML. However, we're not rendering HTML here.
 
-        // eslint-disable-next-line no-param-reassign
         html = html.replace(/\s{2,}/gi, ' ');
 
         // Render text in <b>text</b> in bold.
@@ -28,11 +27,9 @@ export function renderHTML(html?: string) {
         let prevClosingLastIndex = 0;
         const r = [];
 
-        // eslint-disable-next-line no-cond-assign
         while (o = opening.exec(html)) {
             closing.lastIndex = opening.lastIndex;
 
-            // eslint-disable-next-line no-cond-assign
             if (c = closing.exec(html)) {
                 r.push(html.substring(prevClosingLastIndex, o.index));
                 r.push(

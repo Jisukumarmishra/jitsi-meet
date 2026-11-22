@@ -34,7 +34,6 @@ import { FakeParticipant, IJitsiParticipant, IParticipant, ISourceInfo } from '.
  */
 const AVATAR_QUEUE: Object[] = [];
 const AVATAR_CHECKED_URLS = new Map();
-/* eslint-disable arrow-body-style */
 const AVATAR_CHECKER_FUNCTIONS = [
     (participant: IParticipant) => {
         return participant?.isJigasi ? JIGASI_PARTICIPANT_ICON : null;
@@ -427,7 +426,6 @@ export function getRemoteScreensharesBasedOnPresence(stateful: IStateful): strin
             .filter(source => source[1].videoType === VIDEO_TYPE.DESKTOP && !source[1].muted)
             .map(source => source[0]);
 
-        // eslint-disable-next-line no-param-reassign
         screenshares = [ ...screenshares, ...screenshareSources ];
 
         return screenshares;

@@ -49,7 +49,7 @@ export function createLocalTracksF(options: ITrackOptions = {}, store?: IStore, 
 
     // TODO The app's settings should go in the redux store and then the
     // reliance on the global variable APP will go away.
-    store = store || APP.store; // eslint-disable-line no-param-reassign
+    store = store || APP.store;
 
     const state = store.getState();
 

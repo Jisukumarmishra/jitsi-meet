@@ -49,10 +49,10 @@ export function connect(id?: string, password?: string) {
         const passwordOverride = jitsiLocalStorage.getItem('xmpp_password_override');
 
         if (usernameOverride && usernameOverride.length > 0) {
-            id = usernameOverride; // eslint-disable-line no-param-reassign
+            id = usernameOverride;
         }
         if (passwordOverride && passwordOverride.length > 0) {
-            password = passwordOverride; // eslint-disable-line no-param-reassign
+            password = passwordOverride;
         }
 
         return dispatch(_connectInternal(id, password));

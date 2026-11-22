@@ -170,7 +170,6 @@ function _getInitialState() {
  * @returns {Object} The new state after the reduction of the specified action.
  */
 function _setConfig(state: IConfig, { config }: { config: IConfig; }) {
-    // eslint-disable-next-line no-param-reassign
     config = _translateLegacyConfig(config);
 
     const { audioQuality } = config;
@@ -448,7 +447,6 @@ function _translateLegacyConfig(oldValue: IConfig) {
 
     if (oldValue.hideAddRoomButton) {
         newValue.breakoutRooms = {
-            /* eslint-disable-next-line no-extra-parens */
             ...(newValue.breakoutRooms || {}),
             hideAddRoomButton: oldValue.hideAddRoomButton
         };

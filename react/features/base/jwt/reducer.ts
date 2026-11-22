@@ -55,7 +55,6 @@ ReducerRegistry.register<IJwtState>(
             return nextState;
         }
         case SET_JWT: {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const { type, ...payload } = action;
             const nextState = {
                 ...state,

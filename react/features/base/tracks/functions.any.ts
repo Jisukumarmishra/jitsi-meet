@@ -463,7 +463,7 @@ export function _setGUMPendingState(
  */
 export function setTrackMuted(track: any, muted: boolean, state: IReduxState | IMediaState,
         dispatch?: IStore['dispatch']) {
-    muted = Boolean(muted); // eslint-disable-line no-param-reassign
+    muted = Boolean(muted);
 
     // Ignore the check for desktop track muted operation. When the screenshare is terminated by clicking on the
     // browser's 'Stop sharing' button, the local stream is stopped before the inactive stream handler is fired.

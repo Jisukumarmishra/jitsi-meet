@@ -65,7 +65,6 @@ let permissionsListener: Function | undefined;
  * @param {Store} store - Redux store.
  * @returns {Function}
  */
-// eslint-disable-next-line no-unused-vars
 MiddlewareRegistry.register(store => next => action => {
     switch (action.type) {
     case APP_WILL_MOUNT: {

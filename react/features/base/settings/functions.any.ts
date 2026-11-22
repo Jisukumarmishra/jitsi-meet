@@ -33,7 +33,7 @@ export function getPropertyValue(
 ) {
     // Default values don't play nicely with partial objects and we want to make
     // the function easy to use without exhaustively defining all flags:
-    sources = { // eslint-disable-line no-param-reassign
+    sources = {
         // Defaults:
         config: true,
         jwt: true,

@@ -63,7 +63,6 @@ function _isVideoMutedByAuthority(
         videoMutismAuthority: number) {
     const { muted } = toState(stateful)['features/base/media'].video;
 
-    // eslint-disable-next-line no-bitwise
     return Boolean(muted & videoMutismAuthority);
 }
 

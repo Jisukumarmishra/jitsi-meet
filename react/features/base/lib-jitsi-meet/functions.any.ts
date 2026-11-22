@@ -62,7 +62,7 @@ export function isAnalyticsEnabled(stateful: IStateful) {
  */
 export function isFatalJitsiConferenceError(error: Error | string) {
     if (typeof error !== 'string') {
-        error = error.name; // eslint-disable-line no-param-reassign
+        error = error.name;
     }
 
     return (
@@ -89,7 +89,7 @@ export function isFatalJitsiConferenceError(error: Error | string) {
  */
 export function isFatalJitsiConnectionError(error: Error | string | ConnectionFailedError) {
     if (typeof error !== 'string') {
-        error = error.name; // eslint-disable-line no-param-reassign
+        error = error.name;
     }
 
     return (

@@ -1,5 +1,4 @@
 import { NativeModules } from 'react-native';
-// eslint-disable-next-line lines-around-comment
 // @ts-expect-error
 import { format } from 'util';
 

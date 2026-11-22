@@ -8,7 +8,6 @@ import { IAvatarProps } from '../../types';
 
 import styles from './styles';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const DEFAULT_AVATAR = require('../../../../../../images/avatar.png');
 
 interface IProps extends IAvatarProps {

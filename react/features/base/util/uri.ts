@@ -100,8 +100,6 @@ function _fixURIStringScheme(uri: string) {
             protocol = 'https:';
         }
 
-        /* eslint-disable no-param-reassign */
-
         uri = uri.substring(regex.lastIndex);
         if (uri.startsWith('//')) {
             // The specified URL was not a room name only, it contained an
@@ -109,7 +107,6 @@ function _fixURIStringScheme(uri: string) {
             uri = protocol + uri;
         }
 
-        /* eslint-enable no-param-reassign */
     }
 
     return uri;
@@ -144,7 +141,6 @@ export function getBackendSafeRoomName(room?: string): string | undefined {
         return room;
     }
 
-    /* eslint-disable no-param-reassign */
     try {
         // We do not know if we get an already encoded string at this point
         // as different platforms do it differently, but we need a decoded one
@@ -165,7 +161,6 @@ export function getBackendSafeRoomName(room?: string): string | undefined {
 
     // But we still need to (re)encode it.
     room = encodeURIComponent(room ?? '');
-    /* eslint-enable no-param-reassign */
 
     // Unfortunately we still need to lowercase it, because encoding a string will
     // add some uppercase characters, but some backend services
@@ -204,7 +199,7 @@ export function getLocationContextRoot({ pathname }: { pathname: string; }) {
 function _objectToURLParamsArray(obj = {}) {
     const params = [];
 
-    for (const key in obj) { // eslint-disable-line guard-for-in
+    for (const key in obj) {
         try {
             params.push(
                 `${key}=${encodeURIComponent(JSON.stringify(obj[key as keyof typeof obj]))}`);
@@ -234,7 +229,6 @@ function _objectToURLParamsArray(obj = {}) {
  * }}
  */
 export function parseStandardURIString(str: string) {
-    /* eslint-disable no-param-reassign */
 
     const obj: { [key: string]: any; } = {
         toString: _standardURIToString
@@ -319,8 +313,6 @@ export function parseStandardURIString(str: string) {
 
     // fragment
     obj.hash = str.startsWith('#') ? str : '';
-
-    /* eslint-enable no-param-reassign */
 
     return obj;
 }

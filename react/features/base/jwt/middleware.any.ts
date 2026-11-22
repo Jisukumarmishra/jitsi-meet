@@ -151,7 +151,6 @@ function _setConfigOrLocationURL({ dispatch, getState }: IStore, next: Function,
  * specified {@code action}.
  */
 function _setJWT(store: IStore, next: Function, action: AnyAction) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { idToken, jwt, refreshToken, type, ...actionPayload } = action;
 
     if (!Object.keys(actionPayload).length) {
@@ -185,7 +184,6 @@ function _setJWT(store: IStore, next: Function, action: AnyAction) {
 
                     let features = context.features;
 
-                    // eslint-disable-next-line max-depth
                     if (!isVpaasMeeting(state) && tokenRespectTenant && context.tenant) {
                         // we skip checking vpaas meetings as there are other backend rules in place
                         // this way vpaas users can still use this field if needed
@@ -209,7 +207,6 @@ function _setJWT(store: IStore, next: Function, action: AnyAction) {
                         store, { ...newUser,
                             features });
 
-                    // eslint-disable-next-line max-depth
                     if (context.user && context.user.role === 'visitor') {
                         action.preferVisitor = true;
                     }

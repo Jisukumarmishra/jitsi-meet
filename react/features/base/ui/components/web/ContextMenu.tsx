@@ -250,7 +250,6 @@ const ContextMenu = ({
             let wrappedOnce = false;
             let nextFocus = traversalFunction(list, currentFocus);
 
-            /* eslint-disable no-unmodified-loop-condition */
             while (list && nextFocus) {
                 // Prevent infinite loop.
                 if (nextFocus === list.firstChild) {
@@ -262,7 +261,6 @@ const ContextMenu = ({
 
                 // Same logic as useAutocomplete.js
                 const nextFocusDisabled
-                    /* eslint-disable no-extra-parens */
                     = (nextFocus as HTMLInputElement).disabled
                     || nextFocus.getAttribute('aria-disabled') === 'true';
 
@@ -270,7 +268,6 @@ const ContextMenu = ({
                     // Move to the next element.
                     nextFocus = traversalFunction(list, nextFocus);
                 } else {
-                    /* eslint-disable no-extra-parens */
                     (nextFocus as HTMLElement).focus();
 
                     return;
@@ -290,7 +287,6 @@ const ContextMenu = ({
             */
             function lastChild(element: Element | null): Element | null {
                 while (element?.lastElementChild) {
-                    /* eslint-disable no-param-reassign */
                     element = element.lastElementChild;
                 }
 
@@ -331,7 +327,6 @@ const ContextMenu = ({
                 return item.nextElementSibling;
             }
             while (item && item.parentElement !== list) {
-                /* eslint-disable no-param-reassign */
                 item = item.parentElement;
                 if (item?.nextElementSibling) {
                     return item.nextElementSibling;

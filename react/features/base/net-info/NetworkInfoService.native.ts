@@ -3,7 +3,6 @@ import {
     type NetInfoState,
     type NetInfoSubscription
 } from '@react-native-community/netinfo';
-// eslint-disable-next-line lines-around-comment
 // @ts-ignore
 import EventEmitter from 'events';
 

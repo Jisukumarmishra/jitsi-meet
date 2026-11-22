@@ -105,7 +105,6 @@ export function createDesiredLocalTracks(...desiredTypes: any) {
             // video track will be muted until the app realizes the new
             // background state.
 
-            // eslint-disable-next-line no-bitwise
             (video.muted & ~VIDEO_MUTISM_AUTHORITY.BACKGROUND)
                 || desiredTypes.push(MEDIA_TYPE.VIDEO);
         }
@@ -317,7 +316,6 @@ export function replaceLocalTrack(oldTrack: any, newTrack: any, conference?: IJi
     return async (dispatch: IStore['dispatch'], getState: IStore['getState']) => {
         conference
 
-            // eslint-disable-next-line no-param-reassign
             || (conference = getState()['features/base/conference'].conference);
 
         if (conference) {

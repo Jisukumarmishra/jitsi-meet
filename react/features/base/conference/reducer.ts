@@ -394,7 +394,6 @@ function _conferenceFailed(state: IConferenceState, { conference, error }: {
     case JitsiConferenceErrors.MEMBERS_ONLY_ERROR: {
         membersOnly = conference;
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const [ _lobbyJid, _lobbyWaitingForHost ] = error.params;
 
         lobbyWaitingForHost = _lobbyWaitingForHost;

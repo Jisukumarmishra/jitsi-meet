@@ -156,7 +156,6 @@ function _setDynamicBrandingData({ dispatch }: IStore, next: Function, action: A
     }
 
     if (etherpadBase) {
-        // eslint-disable-next-line camelcase
         config.etherpad_base = etherpadBase;
     }
 

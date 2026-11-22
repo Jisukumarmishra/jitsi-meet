@@ -26,8 +26,6 @@ export const MEDIA_TYPE: {
 };
 
 
-/* eslint-disable no-bitwise */
-
 /**
  * The types of authorities which may mute/unmute the local screenshare.
  *
@@ -58,8 +56,6 @@ export const VIDEO_MUTISM_AUTHORITY = {
     USER: 1 << 2,
     CAR_MODE: 1 << 3
 };
-
-/* eslint-enable no-bitwise */
 
 /**
  * The types of video tracks.
