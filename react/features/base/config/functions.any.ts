@@ -1,6 +1,5 @@
 // @ts-ignore
 import { jitsiLocalStorage } from '@jitsi/js-utils';
-// eslint-disable-next-line lines-around-comment
 import { safeJsonParse } from '@jitsi/js-utils/json';
 import { isEmpty, mergeWith, pick } from 'lodash-es';
 
@@ -170,7 +169,6 @@ export function overrideConfigJSON(config: IConfig, interfaceConfig: any, json: 
             if (!isEmpty(configJSON)) {
                 logger.info(`Extending ${configName} with: ${JSON.stringify(configJSON)}`);
 
-                // eslint-disable-next-line arrow-body-style
                 mergeWith(configObj, configJSON, (oldValue, newValue) => {
 
                     // XXX We don't want to merge the arrays, we want to
@@ -181,8 +179,6 @@ export function overrideConfigJSON(config: IConfig, interfaceConfig: any, json: 
         }
     }
 }
-
-/* eslint-enable max-params, no-shadow */
 
 /**
  * Apply whitelist filtering for configs with whitelists.
@@ -392,8 +388,6 @@ export function setConfigFromURLParams(
         config.disableInitialGUM = true;
     }
 }
-
-/* eslint-enable max-params */
 
 /**
  * Returns the dial out url.

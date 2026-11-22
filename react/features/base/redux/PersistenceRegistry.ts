@@ -1,6 +1,5 @@
 // @ts-ignore
 import { jitsiLocalStorage } from '@jitsi/js-utils';
-// eslint-disable-next-line lines-around-comment
 import { safeJsonParse } from '@jitsi/js-utils/json';
 import md5 from 'js-md5';
 
