@@ -1,4 +1,3 @@
-/* eslint-disable react/no-multi-comp */
 import { Route, useIsFocused } from '@react-navigation/native';
 import React, { Component, useEffect } from 'react';
 import { connect, useSelector } from 'react-redux';

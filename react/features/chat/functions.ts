@@ -1,6 +1,5 @@
 // @ts-expect-error
 import aliases from 'react-emoji-render/data/aliases';
-// eslint-disable-next-line lines-around-comment
 // @ts-expect-error
 import emojiAsciiAliases from 'react-emoji-render/data/asciiAliases';
 

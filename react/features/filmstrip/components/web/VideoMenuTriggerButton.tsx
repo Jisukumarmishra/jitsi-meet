@@ -41,7 +41,6 @@ interface IProps {
     visible: boolean;
 }
 
-// eslint-disable-next-line no-confusing-arrow
 const VideoMenuTriggerButton = ({
     hidePopover,
     local,

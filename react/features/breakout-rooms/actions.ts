@@ -197,7 +197,6 @@ export function moveToRoom(roomId?: string) {
             // later, so let's attach the domain to the room String object as
             // a little hack.
 
-            // eslint-disable-next-line no-new-wrappers
             _roomId = new String(id);
 
             // @ts-ignore

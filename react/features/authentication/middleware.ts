@@ -94,7 +94,6 @@ MiddlewareRegistry.register(store => next => action => {
         // CONFERENCE_FAILED caused by
         // JitsiConferenceErrors.AUTHENTICATION_REQUIRED.
         let recoverable;
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const [ _lobbyJid, lobbyWaitingForHost ] = error.params;
 
         if (error.name === JitsiConferenceErrors.AUTHENTICATION_REQUIRED

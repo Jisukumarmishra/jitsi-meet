@@ -7,7 +7,6 @@ import {
     SET_GOOGLE_API_STATE
 } from './actionTypes';
 import { GOOGLE_API_STATES } from './constants';
-// eslint-disable-next-line lines-around-comment
 // @ts-ignore
 import googleApi from './googleApi';
 

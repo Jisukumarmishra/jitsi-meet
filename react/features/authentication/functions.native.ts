@@ -39,9 +39,7 @@ export const getTokenAuthUrl = (
             videoMuted: boolean | undefined;
         },
         roomName: string | undefined,
-        // eslint-disable-next-line max-params
         tenant: string | undefined,
-        // eslint-disable-next-line max-params
         refreshToken?: string | undefined): Promise<string | undefined> => {
 
     const {

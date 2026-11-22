@@ -106,7 +106,7 @@ const TitleBar = (props: IProps) => {
                         </Text>
                     </View>
                 }
-                {/* eslint-disable-next-line react/jsx-no-bind */}
+                { }
                 <Labels createOnPress = { props._createOnPress } />
             </View>
             {

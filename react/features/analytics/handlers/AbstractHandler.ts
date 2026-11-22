@@ -46,7 +46,7 @@ export default class AbstractHandler {
         // white/black lists yet. We need to solve this issue properly by either making these events not so noisy or
         // by removing them completely from the code.
         this._blackListedEvents = [
-            ...(options.blackListedEvents || []), // eslint-disable-line no-extra-parens
+            ...(options.blackListedEvents || []),
             'e2e_rtt', 'rtp.stats', 'rtt.by.region', 'available.device', 'stream.switch.delay', 'ice.state.changed',
             'ice.duration', 'peer.conn.status.duration'
         ];

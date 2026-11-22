@@ -104,7 +104,6 @@ class AddPeopleDialog extends AbstractAddPeopleDialog<IProps, IState> {
      * TimeoutID to delay the search for the time the user is probably typing.
      */
 
-    /* eslint-disable-next-line no-undef */
     searchTimeout: number;
 
     /**
@@ -160,7 +159,6 @@ class AddPeopleDialog extends AbstractAddPeopleDialog<IProps, IState> {
         const { navigation, t } = this.props;
 
         navigation.setOptions({
-            // eslint-disable-next-line react/no-multi-comp
             headerRight: () => (
                 <HeaderNavigationButton
                     disabled = { this._isAddDisabled() }

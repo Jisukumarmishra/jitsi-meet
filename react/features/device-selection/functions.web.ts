@@ -152,7 +152,7 @@ export function getVideoDeviceSelectionDialogProps(stateful: IStateful, isDispla
  * response.
  * @returns {boolean} - True if the request has been processed and false otherwise.
  */
-export function processExternalDeviceRequest( // eslint-disable-line max-params
+export function processExternalDeviceRequest(
         dispatch: IStore['dispatch'],
         getState: IStore['getState'],
         request: any,

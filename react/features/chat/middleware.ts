@@ -404,10 +404,8 @@ function _addChatMsgListener(conference: IJitsiConference, store: IStore) {
 
     conference.on(
         JitsiConferenceEvents.MESSAGE_RECEIVED,
-        /* eslint-disable max-params */
         (participantId: string, message: string, timestamp: number,
                 displayName: string, isFromVisitor: boolean, messageId: string, source: string) => {
-        /* eslint-enable max-params */
             _onConferenceMessageReceived(store, {
                 // in case of messages coming from visitors we can have unknown id
                 participantId: participantId || displayName,

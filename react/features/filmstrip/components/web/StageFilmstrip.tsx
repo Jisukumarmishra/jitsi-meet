@@ -87,7 +87,6 @@ interface IProps {
     _videosClassName: string;
 }
 
-// eslint-disable-next-line no-confusing-arrow
 const StageFilmstrip = (props: IProps) =>
     props._currentLayout === LAYOUTS.STAGE_FILMSTRIP_VIEW ? (
         <span className = { LAYOUT_CLASSNAMES[LAYOUTS.TILE_VIEW] }>

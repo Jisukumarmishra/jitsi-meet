@@ -482,7 +482,6 @@ export function calculateThumbnailSizeForTileView({
         width = initialHeight * aspectRatio;
     } else if (initialRatio >= TILE_PORTRAIT_ASPECT_RATIO) {
         width = initialWidth;
-    // eslint-disable-next-line no-negated-condition
     } else if (!minHeightEnforced) {
         height = initialWidth / TILE_PORTRAIT_ASPECT_RATIO;
 

@@ -156,11 +156,9 @@ const NumbersList: React.FC<IProps> = ({ t, conferenceID, clickableNumbers, numb
                 of Object.entries(numbersMapping.numbers)) {
 
                 if (Array.isArray(numbersArray)) {
-                    /* eslint-disable arrow-body-style */
                     const formattedNumbers = numbersArray.map(number => ({
                         formattedNumber: number
                     }));
-                    /* eslint-enable arrow-body-style */
 
                     numbers[country] = formattedNumbers;
                 }

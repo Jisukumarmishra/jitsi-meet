@@ -582,7 +582,7 @@ function isPhoneNumberRegex(): RegExp {
  * @param {string} peopleSearchTokenLocation - The localStorage key holding the token value for alternate auth.
  * @returns {Promise} - The promise created by the request.
  */
-export function searchDirectory( // eslint-disable-line max-params
+export function searchDirectory(
         serviceUrl: string,
         jwt: string,
         text: string,
@@ -796,7 +796,6 @@ export function hasMultipleNumbers(dialInNumbers?: { numbers: Object; } | string
     // deprecated and will be removed
     const { numbers } = dialInNumbers;
 
-    // eslint-disable-next-line no-confusing-arrow
     return Boolean(numbers && Object.values(numbers).map(a => Array.isArray(a) ? a.length : 0)
         .reduce((a, b) => a + b) > 1);
 }
@@ -959,7 +958,7 @@ export function isSharingEnabled(sharingFeature: string) {
  * @param {string} displayName - The user display name.
  * @returns {Promise} - The promise created by the request.
  */
-export function inviteSipEndpoints( // eslint-disable-line max-params
+export function inviteSipEndpoints(
         inviteItems: Array<{ address: string; }>,
         locationURL: URL,
         sipInviteUrl: string,

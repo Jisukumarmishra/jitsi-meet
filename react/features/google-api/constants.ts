@@ -6,7 +6,6 @@
  *
  * @type {string}
  */
-// eslint-disable-next-line max-len
 export const API_URL_BROADCAST_STREAMS = 'https://content.googleapis.com/youtube/v3/liveStreams?part=id%2Csnippet%2Ccdn%2Cstatus&id=';
 
 /**
@@ -14,7 +13,6 @@ export const API_URL_BROADCAST_STREAMS = 'https://content.googleapis.com/youtube
  *
  * @type {string}
  */
-// eslint-disable-next-line max-len
 export const API_URL_LIVE_BROADCASTS = 'https://content.googleapis.com/youtube/v3/liveBroadcasts?broadcastType=all&mine=true&part=id%2Csnippet%2CcontentDetails%2Cstatus';
 
 /**

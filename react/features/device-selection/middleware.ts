@@ -7,7 +7,6 @@ import MiddlewareRegistry from '../base/redux/MiddlewareRegistry';
  * @param {Store} store - Redux store.
  * @returns {Function}
  */
-// eslint-disable-next-line no-unused-vars
 MiddlewareRegistry.register(store => next => action => {
     const result = next(action);
 

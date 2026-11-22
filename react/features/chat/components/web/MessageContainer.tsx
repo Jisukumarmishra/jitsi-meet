@@ -160,7 +160,6 @@ export default class MessageContainer extends Component<IProps, IState> {
             if (this.state.isScrolledToBottom || hasLocalMessage) {
                 this.scrollToElement(false, null);
             } else {
-                // eslint-disable-next-line react/no-did-update-set-state
                 this.setState({ hasNewMessages: true });
             }
         }

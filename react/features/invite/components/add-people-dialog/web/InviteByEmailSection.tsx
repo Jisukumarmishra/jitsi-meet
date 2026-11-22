@@ -140,7 +140,6 @@ function InviteByEmailSection({ inviteSubject, inviteText, inviteTextiOS, t }: I
             {
                 icon: IconOffice365,
                 tooltipKey: 'addPeople.outlookEmail',
-                // eslint-disable-next-line max-len
                 url: `https://outlook.office.com/mail/deeplink/compose?subject=${encodedInviteSubject}&body=${encodedInviteText}`
             },
             {

@@ -16,7 +16,6 @@ const ETHERPAD_COMMAND = 'etherpad';
  * @param {Store} store - The redux store.
  * @returns {Function}
  */
-// eslint-disable-next-line no-unused-vars
 MiddlewareRegistry.register(({ dispatch, getState }) => next => action => {
     switch (action.type) {
     case CONFERENCE_JOIN_IN_PROGRESS: {

@@ -84,7 +84,6 @@ interface IProps {
     _videosClassName: string;
 }
 
-// eslint-disable-next-line no-confusing-arrow
 const ScreenshareFilmstrip = (props: IProps) =>
     props._currentLayout === LAYOUTS.STAGE_FILMSTRIP_VIEW
         && props._remoteParticipants.length === 1 ? (
