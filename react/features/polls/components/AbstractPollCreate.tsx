@@ -1,5 +1,3 @@
-/* eslint-disable arrow-body-style */
-
 import React, { ComponentType, FormEvent, useCallback, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';

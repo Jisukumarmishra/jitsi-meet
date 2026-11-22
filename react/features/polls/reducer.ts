@@ -170,7 +170,6 @@ ReducerRegistry.register<IPollsState>(STORE_NAME, (state = INITIAL_STATE, action
             };
         }
 
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const { [action.poll.pollId]: _removedPoll, ...newState } = state.polls;
 
         return {

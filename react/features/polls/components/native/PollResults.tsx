@@ -145,5 +145,4 @@ const PollResults = (props: AbstractProps) => {
  * We apply AbstractPollResults to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default AbstractPollResults(PollResults);

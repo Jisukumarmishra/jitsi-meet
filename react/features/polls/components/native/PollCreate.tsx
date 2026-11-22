@@ -89,7 +89,6 @@ const PollCreate = (props: AbstractProps) => {
         }
     }, [ answers, addAnswer, removeAnswer, requestFocus ]);
 
-    /* eslint-disable react/no-multi-comp */
     const createRemoveOptionButton = (onPress: () => void) => (
         <Button
             id = { t('polls.create.removeOption') }
@@ -219,5 +218,4 @@ const PollCreate = (props: AbstractProps) => {
  * We apply AbstractPollCreate to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default AbstractPollCreate(PollCreate);

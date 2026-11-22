@@ -6,7 +6,6 @@ import AbstractPollsPane, { AbstractProps } from '../AbstractPollsPane';
 
 import PollCreate from './PollCreate';
 import PollsList from './PollsList';
-/* eslint-enable lines-around-comment */
 
 const useStyles = makeStyles()(() => {
     return {
@@ -51,5 +50,4 @@ const PollsPane = ({ createMode, isCreatePollsDisabled, onCreate, setCreateMode,
  * We apply AbstractPollsPane to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default AbstractPollsPane(PollsPane);

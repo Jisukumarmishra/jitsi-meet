@@ -280,5 +280,4 @@ const PollCreate = ({
  * We apply AbstractPollCreate to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default AbstractPollCreate(PollCreate);

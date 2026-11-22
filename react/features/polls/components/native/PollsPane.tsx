@@ -29,7 +29,6 @@ const PollsPane = (props: AbstractProps) => {
         const activeUnreadPollsNr = !isPollsTabFocused && unreadPollsCount > 0;
 
         navigation.setOptions({
-            // eslint-disable-next-line react/no-multi-comp
             tabBarLabel: () => (
                 <TabBarLabelCounter
                     activeUnreadNr = { activeUnreadPollsNr }
@@ -71,5 +70,4 @@ const PollsPane = (props: AbstractProps) => {
  * We apply AbstractPollsPane to fill in the AbstractProps common
  * to both the web and native implementations.
  */
-// eslint-disable-next-line new-cap
 export default AbstractPollsPane(PollsPane);
