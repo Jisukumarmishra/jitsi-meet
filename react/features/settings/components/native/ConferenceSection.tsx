@@ -65,7 +65,6 @@ const ConferenceSection = () => {
 
     const onSwitchToggled = useCallback((name: string) => (enabled?: boolean) => {
 
-        // @ts-ignore
         dispatch(updateSettings({ [name]: enabled }));
     }, [ dispatch ]);
 

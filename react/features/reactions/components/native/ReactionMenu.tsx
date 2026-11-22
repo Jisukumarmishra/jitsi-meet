@@ -61,7 +61,7 @@ function ReactionMenu({
                         <ReactionButton
                             onClick = { openGifMenu }
                             styles = { _styles.reactionButton }>
-                            <Image // @ts-ignore
+                            <Image
                                 height = { 22 }
                                 source = { require('../../../../../images/GIPHY_icon.png') } />
                         </ReactionButton>

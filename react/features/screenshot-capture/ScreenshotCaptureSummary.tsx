@@ -47,10 +47,8 @@ export default class ScreenshotCaptureSummary {
 
         let workerUrl = `${baseUrl}screenshot-capture-worker.min.js`;
 
-        // @ts-ignore
         const workerBlob = new Blob([ `importScripts("${workerUrl}");` ], { type: 'application/javascript' });
 
-        // @ts-ignore
         workerUrl = window.URL.createObjectURL(workerBlob);
         this._streamWorker = new Worker(workerUrl, { name: 'Screenshot capture worker' });
         this._streamWorker.onmessage = this._handleWorkerAction;

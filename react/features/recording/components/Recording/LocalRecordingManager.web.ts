@@ -204,10 +204,8 @@ const LocalRecordingManager: ILocalRecordingManager = {
                     noiseSuppression: false,
                     // @ts-ignore
                     restrictOwnAudio: false,
-                    // @ts-ignore
                     suppressLocalAudioPlayback: false,
                 },
-                // @ts-ignore
                 preferCurrentTab: true,
                 surfaceSwitching: 'exclude'
             });
@@ -377,7 +375,6 @@ async function fixDuration(data: Blob, duration: number): Promise<Blob> {
 
     const body = new Uint8Array(dataBuf).subarray(reader.metadataSize);
 
-    // @ts-ignore
     return new Blob([ newMetadataBuf, body ], { type: data.type });
 }
 

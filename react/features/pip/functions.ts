@@ -394,7 +394,6 @@ export function enterPiP(videoElement: HTMLVideoElement | undefined | null) {
 
         // TODO: Enable PiP for browsers:
         // In browsers, we should directly call requestPictureInPicture.
-        // @ts-ignore - requestPictureInPicture is not yet in all TypeScript definitions.
         // requestPictureInPicture();
     } catch (error) {
         logger.error('Error entering Picture-in-Picture:', error);
@@ -409,7 +408,6 @@ export function enterPiP(videoElement: HTMLVideoElement | undefined | null) {
  * @returns {void}
  */
 export function setupMediaSessionHandlers(dispatch: IStore['dispatch']) {
-    // @ts-ignore - MediaSession API is not fully typed in all environments.
     if ('mediaSession' in navigator && navigator.mediaSession?.setActionHandler) {
         try {
             // Set up audio mute toggle handler.

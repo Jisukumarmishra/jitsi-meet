@@ -6,7 +6,6 @@ import Icon from '../../../base/icons/components/Icon';
 import { IconSubtitles } from '../../../base/icons/svg';
 import Button from '../../../base/ui/components/web/Button';
 import LanguageSelector from '../../../subtitles/components/web/LanguageSelector';
-// @ts-ignore
 import AbstractClosedCaptions, { AbstractProps } from '../AbstractClosedCaptions';
 
 import { SubtitlesMessagesContainer } from './SubtitlesMessagesContainer';

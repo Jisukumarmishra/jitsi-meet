@@ -117,7 +117,6 @@ class NotificationsContainer extends Component<IProps> {
                     // @ts-ignore
                     const { timeout, uid } = notification;
 
-                    // @ts-ignore
                     this._notificationDismissTimeout = setTimeout(() => {
                         // Perform a no-op if a timeout is not specified.
                         this._onDismissed(uid);

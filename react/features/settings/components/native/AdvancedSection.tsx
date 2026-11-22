@@ -90,7 +90,6 @@ const AdvancedSection = () => {
                     ))
                 }
             </FormSection>
-            {/* @ts-ignore */}
             <Divider style = { styles.fieldSeparator } />
             <FormSection
                 label = 'settingsView.buildInfoSection'>

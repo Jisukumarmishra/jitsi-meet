@@ -38,7 +38,6 @@ const ChatNavigator = () => {
             : screen.conference.chatTabs.tab.chat;
 
     return (
-        // @ts-ignore
         <ChatTab.Navigator
             backBehavior = 'none'
             initialLayout = {{

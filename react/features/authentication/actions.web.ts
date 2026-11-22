@@ -212,12 +212,10 @@ export function openTokenAuthUrl(tokenAuthServiceUrl: string): any {
         if (!browser.isElectron() && isTokenAuthInline(getState()['features/base/config'])) {
             loginWithPopup(tokenAuthServiceUrl)
                 .then((result: { accessToken: string; idToken: string; refreshToken?: string; }) => {
-                    // @ts-ignore
                     const token: string = result.accessToken;
                     const idToken: string = result.idToken;
                     const refreshToken: string | undefined = result.refreshToken;
 
-                    // @ts-ignore
                     dispatch(setJWT(token, idToken, refreshToken));
 
                     logger.info('Reconnecting to conference with new token.');

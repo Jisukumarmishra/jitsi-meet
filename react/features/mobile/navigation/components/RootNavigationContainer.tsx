@@ -10,7 +10,6 @@ import UnsafeRoomWarning from '../../../prejoin/components/native/UnsafeRoomWarn
 import { isUnsafeRoomWarningEnabled } from '../../../prejoin/functions.native';
 import VisitorsQueue from '../../../visitors/components/native/VisitorsQueue';
 // eslint-disable-next-line
-// @ts-ignore
 import WelcomePage from '../../../welcome/components/WelcomePage';
 import { isWelcomePageEnabled } from '../../../welcome/functions';
 import { _ROOT_NAVIGATION_READY } from '../actionTypes';

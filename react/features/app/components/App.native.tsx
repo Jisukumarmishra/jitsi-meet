@@ -166,7 +166,6 @@ export class App extends AbstractApp<IProps> {
             }
         }
 
-        // @ts-ignore
         dispatch?.(updateSettings(userInfo || {}));
 
         // Update settings with feature-flag.

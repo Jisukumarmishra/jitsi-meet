@@ -76,7 +76,7 @@ const getErrorExtraInfo = (state: any, error: ErrorType) => {
 
     if (error === connectionError) {
         return {
-            type: ERROR_TYPES.CONNECTION, // @ts-ignore
+            type: ERROR_TYPES.CONNECTION,
             isFatal: isFatalJitsiConnectionError(error.name || error)
         };
     }

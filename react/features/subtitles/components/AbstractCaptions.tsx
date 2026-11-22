@@ -47,12 +47,10 @@ export class AbstractCaptions<P extends IAbstractCaptionsProps> extends Componen
 
         const paragraphs = [];
 
-        // @ts-ignore
         for (const [ id, text ] of _transcripts ?? []) {
             paragraphs.push(this._renderParagraph(id, text));
         }
 
-        // @ts-ignore
         return this._renderSubtitlesContainer(paragraphs);
     }
 

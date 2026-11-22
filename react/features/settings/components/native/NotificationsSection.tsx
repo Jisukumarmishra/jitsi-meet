@@ -112,7 +112,6 @@ const NotificationsSection = () => {
             {
                 Object.keys(enabledNotifications).length > 0 && (
                     <>
-                        {/* @ts-ignore */}
                         <Divider style = { styles.fieldSeparator } />
                         <FormSection
                             label = 'notify.displayNotifications'>

@@ -94,7 +94,6 @@ export default class WebHidManager extends EventTarget {
      * @returns {boolean} - True if supported, otherwise false.
      */
     isSupported(): boolean {
-        // @ts-ignore
         return Boolean(window.navigator.hid?.requestDevice);
     }
 
@@ -114,7 +113,6 @@ export default class WebHidManager extends EventTarget {
             await this.close();
         }
 
-        // @ts-ignore
         const devices = await navigator.hid.requestDevice(requestTelephonyHID);
 
         if (!devices?.length) {
@@ -268,7 +266,6 @@ export default class WebHidManager extends EventTarget {
      */
     async loadPairedDevices() {
         try {
-            // @ts-ignore
             const devices = await navigator.hid.getDevices();
 
             this.availableDevices = devices;

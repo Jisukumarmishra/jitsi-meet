@@ -1,8 +1,6 @@
-// @ts-ignore
 // eslint-disable-next-line
 import { openTokenAuthUrl } from '../authentication/actions';
 
-// @ts-ignore
 import { getTokenAuthUrl, isTokenAuthEnabled } from '../authentication/functions';
 import { getJwtExpirationDate } from '../base/jwt/functions';
 import { MEDIA_TYPE } from '../base/media/constants';

@@ -64,7 +64,6 @@ const PollResults = (props: AbstractProps) => {
                     </View>
                     { voters && voterCount > 0
                         && <View style = { resultsStyles.voters as ViewStyle }>
-                            {/* @ts-ignore */}
                             {voters.map(voter =>
                                 (<Text
                                     key = { voter.id }

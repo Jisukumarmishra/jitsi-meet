@@ -10,7 +10,6 @@ export function isOldJitsiMeetElectronApp() {
         return false;
     }
 
-    // @ts-ignore
     const match = navigator.userAgent.match(/(JitsiMeet)\s*\/\s*((\d+)\.[^\s]*)/);
 
     if (!Array.isArray(match) || match.length < 3) {

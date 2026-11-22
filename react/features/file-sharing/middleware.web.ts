@@ -321,7 +321,6 @@ function uploadFile(file: File, store: IStore, token: string): void {
 
     formData.append('metadata', JSON.stringify(fileMetadata));
 
-    // @ts-ignore
     formData.append('file', file as Blob, file.name);
 
     // Use XMLHttpRequest to track upload

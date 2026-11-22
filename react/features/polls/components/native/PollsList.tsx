@@ -59,7 +59,6 @@ const PollsList = ({ setCreateMode }: IPollListProps) => {
     return (
         <FlatList
             ListEmptyComponent = { renderEmptyComponent }
-            // @ts-ignore
             contentContainerStyle = { noPolls && pollsStyles.emptyListContentContainer as ViewStyle }
             data = { listPolls }
             extraData = { listPolls }

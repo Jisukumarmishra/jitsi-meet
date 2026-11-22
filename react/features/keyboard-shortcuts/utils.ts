@@ -32,7 +32,6 @@ export const getPriorityFocusedElement = (): HTMLElement | null =>
 * @returns {string} - The keyboard key.
 */
 export const getKeyboardKey = (e: KeyboardEvent): string => {
-    // @ts-ignore
     const { altKey, code, key, shiftKey, type, which, ctrlKey } = e;
 
     // If alt is pressed a different char can be returned so this takes
