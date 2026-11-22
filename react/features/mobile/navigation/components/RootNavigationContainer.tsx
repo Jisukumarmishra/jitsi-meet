@@ -9,7 +9,6 @@ import Prejoin from '../../../prejoin/components/native/Prejoin';
 import UnsafeRoomWarning from '../../../prejoin/components/native/UnsafeRoomWarning';
 import { isUnsafeRoomWarningEnabled } from '../../../prejoin/functions.native';
 import VisitorsQueue from '../../../visitors/components/native/VisitorsQueue';
-// eslint-disable-next-line
 import WelcomePage from '../../../welcome/components/WelcomePage';
 import { isWelcomePageEnabled } from '../../../welcome/functions';
 import { _ROOT_NAVIGATION_READY } from '../actionTypes';

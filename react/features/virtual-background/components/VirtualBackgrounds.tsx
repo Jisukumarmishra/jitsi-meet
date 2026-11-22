@@ -1,6 +1,5 @@
 // @ts-ignore
 import { jitsiLocalStorage } from '@jitsi/js-utils/jitsi-local-storage';
-// eslint-disable-next-line lines-around-comment
 import { safeJsonParse } from '@jitsi/js-utils/json';
 import React, { useCallback, useEffect, useState } from 'react';
 import { WithTranslation } from 'react-i18next';
@@ -20,7 +19,6 @@ import { IVirtualBackground } from '../reducer';
 
 import UploadImageButton from './UploadImageButton';
 import VirtualBackgroundPreview from './VirtualBackgroundPreview';
-/* eslint-enable lines-around-comment */
 
 interface IProps extends WithTranslation {
 
